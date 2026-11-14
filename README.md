@@ -1,7 +1,11 @@
-LLM's run on a two-file architecture:
+**Function calling** (also known as tool-calling) is a method by which models can reliably connect and interact with external tools or APIs.
+**LLM** is a type of artificial intelligence (AI) program trained on massive amounts of text data to understand, summarize, translate, and generate human-like language.
+**Tokenization** is the process of breaking raw text down into smaller pieces (words, sub-words, or characters) so a computer can map them into numerical IDs and vector embeddings.
+**Neural network** is a computer system modeled loosely after the human brain that learns to recognize patterns and make decisions.
+**BPE tokenizer** is a subword tokenization algorithm used by large language models (LLMs) like GPT to break raw text into smaller, manageable units (tokens) before processing.
+**AI agent** is an autonomous software system that uses an artificial intelligence perceive a goal, plan steps, use external tools, and execute actions on its own.
 
-
-An LLM is two files: weights (gigabytes of floats) and a short runner program.
+LLM is two files: file of weights (tons of floats) and a short runner program.
 Parameter weights file acts as a compressed representation of knowledge.
 Runtime file executes the mathematical operations to process tokens.
 
@@ -15,7 +19,7 @@ Tokenizer splits input string into sub-word units using a lookup table which
 typically contain tens of thousands to over a hundred thousand unique tokens.
 Tokenization quirks lead to specific failure modes in spelling, math and coding
 
-Example mapping (BPE tokenization):
+Example mapping with BPE tokenization:
 		Text input: "How do tokens look like?"
 		Token chunks: ["How", " do", " tokens", " look", " like", "?"]
 		Token IDs (Integers): [4486, 466, 16337, 1445, 588, 30]
@@ -25,7 +29,7 @@ integers: [4486, 466, 16337, 1445, 588, 30].
 
 2. Vector Embedding Lookup
 		Runtime program reads sequence [4486, 466, 16337, 1445, 588, 30] and 
-		converts each integer into a high-dimensional vector (a long array of 
+		convert
 		floating-point numbers) using weights file (parameters). 
 
 Example embedded representation:
