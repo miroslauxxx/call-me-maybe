@@ -1,16 +1,19 @@
 LLM's run on a two-file architecture:
 
-1. Weights file: which is massive binary file containing parameters in form of
-floating numbers. It's lossy, compressed represenation of internet text.
-2. Runtime program: executes matrix multiplications to calculate token 
-probabilities
+
+An LLM is two files: weights (gigabytes of floats) and a short runner program.
+Parameter weights file acts as a compressed representation of knowledge.
+Runtime file executes the mathematical operations to process tokens.
 
 ---
 
 How the prompt is beeing processed:
 
 1. Tokenization
-Tokenizer splits input string into sub-word units using a lookup table.
+Text is broken into tokens, which can be words, parts of words, or characters.
+Tokenizer splits input string into sub-word units using a lookup table which 
+typically contain tens of thousands to over a hundred thousand unique tokens.
+Tokenization quirks lead to specific failure modes in spelling, math and coding
 
 Example mapping (BPE tokenization):
 		Text input: "How do tokens look like?"
@@ -54,3 +57,5 @@ Example probability output for the next token:
 		integer 2574 to the input sequence to generate the next token.
 
 //////// GOTO DOWNLOADS
+
+https://geeksforgeeks.org/artificial-intelligence/function-calling-in-llms
