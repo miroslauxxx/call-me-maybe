@@ -1,5 +1,4 @@
 **Function calling** (also known as tool-calling) is a method by which models can reliably connect and interact with external tools or APIs.
-
 **LLM** is a type of artificial intelligence (AI) program trained on massive amounts of text data to understand, summarize, translate, and generate human-like language.
 
 **Tokenization** is the process of breaking raw text down into smaller pieces (words, sub-words, or characters) so a computer can map them into numerical IDs and vector embeddings.
