@@ -1,8 +1,13 @@
 **Function calling** (also known as tool-calling) is a method by which models can reliably connect and interact with external tools or APIs.
+
 **LLM** is a type of artificial intelligence (AI) program trained on massive amounts of text data to understand, summarize, translate, and generate human-like language.
+
 **Tokenization** is the process of breaking raw text down into smaller pieces (words, sub-words, or characters) so a computer can map them into numerical IDs and vector embeddings.
+
 **Neural network** is a computer system modeled loosely after the human brain that learns to recognize patterns and make decisions.
+
 **BPE tokenizer** is a subword tokenization algorithm used by large language models (LLMs) like GPT to break raw text into smaller, manageable units (tokens) before processing.
+
 **AI agent** is an autonomous software system that uses an artificial intelligence perceive a goal, plan steps, use external tools, and execute actions on its own.
 
 LLM is two files: file of weights (tons of floats) and a short runner program.
@@ -62,4 +67,4 @@ Example probability output for the next token:
 
 //////// GOTO DOWNLOADS
 
-https://geeksforgeeks.org/artificial-intelligence/function-calling-in-llms
+https://geeksforgeeks.org/artificial-intelligence/function-calling-in-llmsk
